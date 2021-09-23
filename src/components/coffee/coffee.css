@@ -1,0 +1,143 @@
+
+.coffee {
+	position: relative;
+}
+
+.coffee::after {
+	display: block;
+	content: "";
+	background-color: var(--primary);
+	position: absolute;
+	z-index: 0;
+	height: 100%;
+	width: 90vw;
+	right: 70%;
+	top: 0;
+	bottom: 0;
+}
+
+.coffee__container {
+	padding: 80px 0 120px;
+}
+
+.coffee__inner {
+	margin-top: 70px;
+}
+
+.coffee__card-inner {
+	padding: 40px;
+}
+
+.coffee__card-inner span {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 0px;
+	color: var(--accent);
+}
+
+.coffee__card-inner h4 {
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 28px;
+	color: var(--dark-gray-2);
+	margin-top: 5px;
+}
+
+.coffee__card-inner p {
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 22px;
+	color: var(--dark-gray);
+	margin-top: 20px;
+}
+
+.coffee__card-inner button {
+	cursor: pointer;
+	outline: none;
+	transition: .15s;
+	margin-top: 20px;
+}
+
+.coffee__buy {
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 22px;
+	color: var(--light-gray-2);
+	background: var(--accent);
+	border: none;
+	border-radius: 19px;
+	padding: 6px 17px;
+}
+
+.coffee__buy:hover {
+	transform: scale(1.05);
+}
+
+.coffee__more {
+	font-size: 16px;
+	line-height: 22px;
+	color: var(--primary);
+	background: none;
+	border: none;
+	margin-left: 30px;
+}
+
+.coffee__more:hover {
+	transform: scale(1.05);
+}
+
+.swiper-button-prev {
+	display: none;
+}
+
+.swiper-button-next {
+	background-color: var(--accent);
+	width: 48px;
+	height: 48px;
+	border-radius: 100px;
+	background-image: url('./arrow.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	z-index: 15;
+	position: absolute;
+	right: 117px;
+}
+
+.swiper-button-next::after {
+	display: none;
+}
+
+
+.coffee__slider {
+	position: relative;
+	width: 73vw;
+	margin: 0 auto;
+	padding: 40px;
+}
+
+.coffee__slider::after {
+	display: block;
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 9%;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 2;
+
+	background-color: var(--light-gray-2);
+	opacity: 0.8;
+}
+
+.coffee__slide {
+	background-color: var(--white);
+	display: flex;
+	justify-content: flex-start;
+	transition: 0.15s;
+} 
+
+.coffee__slide:hover {
+	filter: drop-shadow(4px 4px 24px rgba(205, 205, 205, 0.5));
+}

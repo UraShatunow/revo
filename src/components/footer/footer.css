@@ -1,0 +1,14 @@
+.footer {
+	background-color: var(--light-gray);
+	margin: 0;
+	padding: 20px;
+	text-align: center;
+}
+
+.footer p {
+	margin: 0;
+	font-style: italic;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 22px;
+}
